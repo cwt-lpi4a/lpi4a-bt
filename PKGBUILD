@@ -3,13 +3,13 @@
 pkgbase='mkimg-th1520'
 pkgname='lpi4a-bt'
 pkgdesc='Bluetooth service for Lichee Pi 4A'
-pkgver=20240602
+pkgver=20240720
 pkgrel=1
 url='https://github.com/revyos/mkimg-th1520'
 arch=(riscv64)
 license=('proprietary')
 source=("https://github.com/revyos/${pkgbase}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('75ea38cc58cd5b1e25f3c93ea9f7111e2b0ac69ef8e5f16419cbd88aa2e94143')
+sha256sums=('f2983044d141a45f12b842e18d92c7211352479a8e65674de7a61e442f9b02c3')
 
 build() {
   cd "$srcdir/$pkgbase-$pkgver/addons/$pkgname/package/rtk-hciattach/src"
